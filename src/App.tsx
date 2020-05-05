@@ -1,16 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { store } from './store';
 import { Provider } from 'react-redux';
-import ReduxHooksComponent from './ReduxHooksComponent';
+//import logo from './logo.svg';
+import './App.css';
+import store from './Store-1/store';
+
+//import ReduxHooksComponent from './ReduxHooksComponent';
+
+import Users from './Users';
+//import User1 from './User1';
 
 const App: React.FC = () => {
   return (
     <Provider store={store}>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          {/* <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
           </p>
@@ -22,7 +26,8 @@ const App: React.FC = () => {
           >
             Learn React
           </a>
-          <ReduxHooksComponent />
+          <ReduxHooksComponent /> */}
+          <Users />
         </header>
       </div>
     </Provider>
